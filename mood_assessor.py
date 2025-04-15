@@ -17,7 +17,7 @@ def diagnose_mood():
     with open("data/mood_diary.txt", "r") as f:
         lines = f.readlines()
 
-    if len(lines) > 7:
+    if len(lines) >= 7:
         latest7 = lines[-7:]
 
         num_happy = 0
